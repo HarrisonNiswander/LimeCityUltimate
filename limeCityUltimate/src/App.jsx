@@ -11,7 +11,7 @@ import StatsGame from './pages/StatsGame.jsx'
 import Records from './pages/Records.jsx'
 import RecordStat from './pages/RecordStat.jsx'
 import GameHistory from './pages/GameHistory.jsx'
-import YouTube from './pages/YouTube.jsx'
+import Youtube from './pages/Youtube.jsx'
 import TournamentResults from './pages/TournamentResults.jsx'
 import TournamentDetail from './pages/TournamentDetail.jsx'
 
@@ -31,7 +31,7 @@ export default function App() {
           <Route path="/stats/:gameId" element={<StatsGame />} />
           <Route path="/records" element={<Records />} />
           <Route path="/records/:statId" element={<RecordStat />} />
-          <Route path="/youtube" element={<YouTube />} />
+          <Route path="/youtube" element={<Youtube />} />
           <Route path="/tournaments" element={<TournamentResults />} />
           <Route path="/tournaments/:tournamentId" element={<TournamentDetail />} />
         </Routes>
