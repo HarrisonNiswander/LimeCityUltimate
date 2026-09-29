@@ -41,7 +41,7 @@ function getNewestRecords(limit = 4) {
     .slice(0, limit)
 }
 
-function getNewestVideos(limit = 3) {
+function getNewestVideos(limit = 6) {
   return [...videos]
     .sort((a, b) => new Date(b.date) - new Date(a.date))
     .slice(0, limit)
@@ -50,7 +50,7 @@ function getNewestVideos(limit = 3) {
 export default function Home() {
   const latestSeason = seasonRecords[0]
   const newestRecords = getNewestRecords(4)
-  const newestVideos = getNewestVideos(3)
+  const newestVideos = getNewestVideos(6)
 
   return (
     <>
