@@ -1,0 +1,61 @@
+.tourney-timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.tourney-item {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 24px;
+}
+
+.tourney-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.tourney-line {
+  flex: 1;
+  width: 1px;
+  background: var(--turf-line);
+  margin-top: 8px;
+}
+
+.tourney-content {
+  padding-bottom: 40px;
+}
+
+.tourney-content-link {
+  display: block;
+  border-radius: 4px;
+  padding: 16px 18px;
+  margin: -16px -18px 24px;
+  transition: background 0.15s ease;
+}
+
+.tourney-content-link:hover {
+  background: var(--ink-soft);
+}
+
+.tourney-tags {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.tourney-tag {
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  border: 1px solid var(--turf-line);
+  color: var(--muted);
+}
+
+.tourney-tag-accent {
+  background: var(--accent);
+  color: var(--ink);
+  border-color: var(--accent);
+}
