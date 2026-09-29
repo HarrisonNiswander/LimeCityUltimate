@@ -1,0 +1,78 @@
+.records-sub-head {
+  font-size: 1.3rem;
+  color: var(--cream);
+  margin-bottom: 16px;
+}
+
+.stat-directory {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 640px) {
+  .stat-directory { grid-template-columns: 1fr; }
+}
+
+.stat-directory-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--ink-soft);
+  border: 1px solid var(--turf-line);
+  border-radius: 4px;
+  padding: 18px 20px;
+  color: var(--cream);
+  font-weight: 600;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.stat-directory-item:hover { border-color: var(--accent); background: var(--turf); }
+
+.stat-directory-note {
+  color: var(--muted);
+  font-weight: 400;
+  font-size: 0.82rem;
+}
+
+.stat-directory-arrow {
+  margin-left: auto;
+  color: var(--accent);
+}
+
+.records-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+@media (max-width: 860px) {
+  .records-grid { grid-template-columns: 1fr; }
+}
+
+.record-card {
+  background: var(--ink-soft);
+  border: 1px solid var(--turf-line);
+  border-radius: 4px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.record-value {
+  font-family: var(--font-display);
+  font-size: 2.4rem;
+  color: var(--accent);
+}
+
+.record-label {
+  color: var(--cream);
+  font-size: 1rem;
+}
+
+.record-context {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
