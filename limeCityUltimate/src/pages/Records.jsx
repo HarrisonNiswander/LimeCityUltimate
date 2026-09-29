@@ -19,7 +19,7 @@ export default function Records() {
         <Link to="/stats/history" className="btn btn-ghost">Game history</Link>
       </div>
 
-      <h2 className="records-sub-head">Season history</h2>
+      {/* <h2 className="records-sub-head">Season history</h2>
       <div className="leader-table" style={{ marginBottom: 56 }}>
         <div className="leader-row leader-head" style={{ gridTemplateColumns: '1fr 1fr 1fr' }}>
           <span>Season</span>
@@ -33,7 +33,7 @@ export default function Records() {
             <span style={{ color: 'var(--muted)' }}>{s.finish}</span>
           </div>
         ))}
-      </div>
+      </div> */}
 
       <p className="page-sub" style={{ marginBottom: 32 }}>
         Pick a stat to see the top 10 single-game performances and the all-time leaders.
