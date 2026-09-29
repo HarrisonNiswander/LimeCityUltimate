@@ -9,7 +9,8 @@ import videos from '../data/videos.js'
 import './styles/Home.css'
 
 function formatDate(date) {
-  return new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+  const parsed = new Date(`${date}T12:00:00`)
+  return parsed.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
 }
 
 // Every current #1 (record-holding) single-game performance, across every
