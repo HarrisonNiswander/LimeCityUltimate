@@ -1,0 +1,120 @@
+.lb-title {
+  font-size: 1.2rem;
+  color: var(--cream);
+  margin-bottom: 12px;
+}
+
+.lb-table {
+  border: 1px solid var(--turf-line);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0 auto 40px;
+  max-width: 980px;
+}
+
+.lb-row {
+  display: grid;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 28px;
+  background: var(--ink-soft);
+  border-bottom: 1px solid var(--turf-line);
+}
+
+.lb-row-plain { grid-template-columns: 56px 1fr 100px; }
+.lb-row-game { grid-template-columns: 56px 1fr 90px 1fr; }
+
+.lb-row:last-child { border-bottom: none; }
+
+.lb-head {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  background: var(--ink);
+}
+
+.lb-rank {
+  font-family: var(--font-display);
+  color: var(--cream);
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.lb-player {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lb-player-name {
+  color: var(--cream);
+  font-weight: 600;
+}
+
+.lb-photo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--turf);
+  flex-shrink: 0;
+}
+
+.lb-value {
+  font-family: var(--font-display);
+  color: var(--accent);
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+.lb-game {
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.lb-row-plain.lb-head span:nth-child(1),
+.lb-row-game.lb-head span:nth-child(1) { text-align: center; }
+.lb-row-plain.lb-head span:nth-child(3),
+.lb-row-game.lb-head span:nth-child(3) { text-align: center; }
+.lb-row-game.lb-head span:nth-child(4) { text-align: center; }
+
+.lb-tie {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.lb-tie-name {
+  padding-left: 48px;
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* medal coloring */
+.medal-gold {
+  background: linear-gradient(90deg, rgba(143, 111, 34, 0.16), transparent 70%);
+  border-left: 3px solid var(--gold);
+}
+.medal-gold .lb-rank, .medal-gold .lb-value { color: var(--gold); }
+
+.medal-silver {
+  background: linear-gradient(90deg, rgba(108, 116, 122, 0.16), transparent 70%);
+  border-left: 3px solid var(--silver);
+}
+.medal-silver .lb-rank, .medal-silver .lb-value { color: var(--silver); }
+
+.medal-bronze {
+  background: linear-gradient(90deg, rgba(140, 87, 48, 0.16), transparent 70%);
+  border-left: 3px solid var(--bronze);
+}
+.medal-bronze .lb-rank, .medal-bronze .lb-value { color: var(--bronze); }
+
+@media (max-width: 640px) {
+  .lb-row-plain { grid-template-columns: 36px 1fr 70px; gap: 8px; padding: 10px 12px; }
+  .lb-row-game { grid-template-columns: 36px 1fr 60px; }
+  .lb-row-game .lb-game { display: none; }
+  .lb-photo { width: 28px; height: 28px; }
+  .lb-tie-name { padding-left: 0; }
+}
