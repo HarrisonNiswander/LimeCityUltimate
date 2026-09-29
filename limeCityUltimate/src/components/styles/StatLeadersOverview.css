@@ -1,0 +1,25 @@
+.slo-row-plain { grid-template-columns: 170px 1fr 90px; gap: 24px; }
+.slo-row-game { grid-template-columns: 170px 1fr 80px 1fr; gap: 24px; }
+
+.slo-group-label {
+  padding: 14px 28px;
+  background: var(--turf);
+  color: var(--accent-dim);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  border-bottom: 1px solid var(--turf-line);
+  text-align: center;
+}
+
+.slo-stat-label {
+  color: var(--cream);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .slo-row-plain { grid-template-columns: 100px 1fr 60px; gap: 12px; }
+  .slo-row-game { grid-template-columns: 100px 1fr 50px; gap: 12px; }
+  .slo-row-game .lb-game { display: none; }
+}
