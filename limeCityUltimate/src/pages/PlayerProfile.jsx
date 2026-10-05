@@ -8,7 +8,7 @@ import {
   getAllTimeValue,
   getAllTimeRank,
 } from '../utils/playerRecords.js'
-import './styles/PlayerProfile.css'
+import './PlayerProfile.css'
 
 export default function PlayerProfile() {
   const { playerId } = useParams()
@@ -52,7 +52,10 @@ export default function PlayerProfile() {
         <img src={player.photo} alt="" className="profile-photo" />
         <div>
           <span className="page-kicker">#{player.number} · {player.position}</span>
-          <h1 className="profile-name">{player.name}</h1>
+          <h1 className="profile-name">
+            {player.name}
+            {player.nickname && <span className="profile-nickname"> "{player.nickname}"</span>}
+          </h1>
           <p style={{ color: 'var(--muted)', marginTop: 10, maxWidth: '55ch', lineHeight: 1.6 }}>
             {player.bio}
           </p>

@@ -17,7 +17,7 @@ export default function PlayerModal({ player, onClose }) {
 
   if (!player) return null
 
-  const { name, number, position, photo, year, hometown, bio, stats } = player
+  const { name, nickname, number, position, photo, year, hometown, bio, stats } = player
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
@@ -34,7 +34,10 @@ export default function PlayerModal({ player, onClose }) {
           <img src={photo} alt="" className="modal-photo" />
           <div>
             <span className="page-kicker">#{number} · {position}</span>
-            <h2 id="player-modal-title" className="modal-name">{name}</h2>
+            <h2 id="player-modal-title" className="modal-name">
+              {name}
+              {nickname && <span className="modal-nickname"> "{nickname}"</span>}
+            </h2>
             <p style={{ color: 'var(--muted)', marginTop: 6 }}>{year} · {hometown}</p>
           </div>
         </div>

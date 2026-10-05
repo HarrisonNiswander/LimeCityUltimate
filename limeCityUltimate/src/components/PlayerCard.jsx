@@ -5,7 +5,10 @@ export default function PlayerCard({ player, onSelect }) {
         <img src={player.photo} alt="" className="player-photo" />
         <span className="player-number">{player.number}</span>
       </span>
-      <span className="player-name">{player.name}</span>
+      <span className="player-name">
+        {player.name}
+        {player.nickname && <span className="player-nickname"> "{player.nickname}"</span>}
+      </span>
       <span className="player-position">{player.position}</span>
     </button>
   )
