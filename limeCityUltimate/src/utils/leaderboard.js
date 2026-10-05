@@ -3,7 +3,6 @@
 // distinct value skips ahead accordingly (1, 2, 2, 4...).
 // Each returned row gets `rank` and `tie` (true for every row after the
 // first at that rank) so the UI can render a slim "tie" row underneath.
-
 export function withRanks(entries) {
   let displayRank = 0
   let lastValue = null
