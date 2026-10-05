@@ -9,7 +9,7 @@ const players = [
     nickname: 'Harry',
     number: 33,
     position: 'Handler',
-    photo: '/players/placeholder.svg',
+    photo: '/playerPics/harrisonN.JPG',
     year: 'Captain · 5th year',
     yearsWithTeam: 5,
     clashRecord: '54-16',
