@@ -1,7 +1,7 @@
 import { medalClass } from '../utils/leaderboard.js'
-import '../components/LeaderboardTable.css'
-import '../components/StatLeadersOverview.css'
-import './PlayerStatTable.css'
+import '../components/styles/LeaderboardTable.css'
+import '../components/styles/StatLeadersOverview.css'
+import './styles/PlayerStatTable.css'
 
 function formatDate(date) {
   return new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })

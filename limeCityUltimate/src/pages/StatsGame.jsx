@@ -1,7 +1,7 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
 import games from '../data/games.js'
 import { getGameBoxScore } from '../utils/gameBoxScore.js'
-import './Stats.css'
+import './styles/Stats.css'
 
 export default function StatsGame() {
   const { gameId } = useParams()

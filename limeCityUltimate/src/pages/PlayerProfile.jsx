@@ -8,7 +8,7 @@ import {
   getAllTimeValue,
   getAllTimeRank,
 } from '../utils/playerRecords.js'
-import './PlayerProfile.css'
+import './styles/PlayerProfile.css'
 
 export default function PlayerProfile() {
   const { playerId } = useParams()

@@ -1,6 +1,6 @@
 import { withRanks, medalClass } from '../utils/leaderboard.js'
 import { findPlayer } from '../utils/findPlayer.js'
-import './LeaderboardTable.css'
+import './styles/LeaderboardTable.css'
 
 function formatDate(date) {
   return new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })

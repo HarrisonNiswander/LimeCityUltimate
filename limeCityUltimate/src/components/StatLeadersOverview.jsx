@@ -1,8 +1,8 @@
 import statCategories from '../data/statCategories.js'
 import { findPlayer } from '../utils/findPlayer.js'
 import { withRanks } from '../utils/leaderboard.js'
-import '../components/LeaderboardTable.css'
-import './StatLeadersOverview.css'
+import '../components/styles/LeaderboardTable.css'
+import './styles/StatLeadersOverview.css'
 
 function formatDate(date) {
   return new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })

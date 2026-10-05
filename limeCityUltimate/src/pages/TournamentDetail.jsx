@@ -3,7 +3,7 @@ import tournaments from '../data/tournaments.js'
 import games from '../data/games.js'
 import { getTournamentPlayerTotals } from '../utils/tournamentStats.js'
 import { findPlayer } from '../utils/findPlayer.js'
-import './TournamentResults.css'
+import './styles/TournamentResults.css'
 
 export default function TournamentDetail() {
   const { tournamentId } = useParams()
