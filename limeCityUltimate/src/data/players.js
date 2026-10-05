@@ -16,9 +16,9 @@ const players = [
     hometown: 'Huntington, IN',
     bio: 'Steady under pressure and the loudest voice on the sideline. Runs the offense and rarely turns the disc over.',
     stats: {
-      goals: 0, assists: 0, blocks: 0, gamesPlayed: 0, pointsPlayed: 0,
-      throwAttempts: 0, throwaways: 0, hucksAttempted: 0, hucksCaught: 0,
-      plusMinus: 0, callahans: 0,
+      goals: 7, assists: 35, blocks: 14.5, gamesPlayed: 14, pointsPlayed: 116,
+      throwAttempts: 71, throwaways: 23, hucksAttempted: 19, hucksCaught: 11,
+      plusMinus: 31.5, callahans: 0,
     },
   },
   {
@@ -34,9 +34,9 @@ const players = [
     hometown: 'Huntington, IN',
     bio: 'Deep threat with elite top-end speed. Led the team in goals two seasons running.',
     stats: {
-      goals: 0, assists: 0, blocks: 0, gamesPlayed: 0, pointsPlayed: 0,
-      throwAttempts: 0, throwaways: 0, hucksAttempted: 0, hucksCaught: 0,
-      plusMinus: 0, callahans: 0,
+      goals: 16, assists: 5, blocks: 10, gamesPlayed: 10, pointsPlayed: 83,
+      throwAttempts: 30, throwaways: 6, hucksAttempted: 2, hucksCaught: 1,
+      plusMinus: 23, callahans: 0,
     },
   },
   {
@@ -52,9 +52,9 @@ const players = [
     hometown: 'Carmel, IN',
     bio: 'Left-handed break throws that change the geometry of every point. Team-first mentality.',
     stats: {
-      goals: 0, assists: 0, blocks: 0, gamesPlayed: 0, pointsPlayed: 0,
-      throwAttempts: 0, throwaways: 0, hucksAttempted: 0, hucksCaught: 0,
-      plusMinus: 0, callahans: 0,
+      goals: 13, assists: 6, blocks: 6.5, gamesPlayed: 9, pointsPlayed: 73,
+      throwAttempts: 45, throwaways: 11, hucksAttempted: 2, hucksCaught: 2,
+      plusMinus: 13.5, callahans: 0,
     },
   },
   {
@@ -70,9 +70,9 @@ const players = [
     hometown: 'Huntington, IN',
     bio: 'Fearless in the air. Biggest layout of the 2025 season came against Prairie Fire.',
     stats: {
-      goals: 0, assists: 0, blocks: 0, gamesPlayed: 0, pointsPlayed: 0,
-      throwAttempts: 0, throwaways: 0, hucksAttempted: 0, hucksCaught: 0,
-      plusMinus: 0, callahans: 0,
+      goals: 7, assists: 20, blocks: 9, gamesPlayed: 13, pointsPlayed: 104,
+      throwAttempts: 43, throwaways: 12, hucksAttempted: 8, hucksCaught: 5,
+      plusMinus: 23, callahans: 0,
     },
   },
   {
@@ -88,9 +88,9 @@ const players = [
     hometown: 'Huntington, IN',
     bio: 'Equally comfortable throwing or cutting. The team\u2019s glue player.',
     stats: {
-      goals: 0, assists: 0, blocks: 0, gamesPlayed: 0, pointsPlayed: 0,
-      throwAttempts: 0, throwaways: 0, hucksAttempted: 0, hucksCaught: 0,
-      plusMinus: 0, callahans: 0,
+      goals: 9, assists: 7, blocks: 7, gamesPlayed: 8, pointsPlayed: 61,
+      throwAttempts: 40, throwaways: 9, hucksAttempted: 1, hucksCaught: 0,
+      plusMinus: 11, callahans: 0,
     },
     
   },
@@ -107,9 +107,9 @@ const players = [
     hometown: 'Huntington, IN',
     bio: 'Fastest player on the roster. Still learning the playbook, already making highlight-reel grabs.',
     stats: {
-      goals: 0, assists: 0, blocks: 0, gamesPlayed: 0, pointsPlayed: 0,
-      throwAttempts: 0, throwaways: 0, hucksAttempted: 0, hucksCaught: 0,
-      plusMinus: 0, callahans: 0,
+      goals: 4, assists: 8, blocks: 3, gamesPlayed: 8, pointsPlayed: 61,
+      throwAttempts: 52, throwaways: 14, hucksAttempted: 10, hucksCaught: 5,
+      plusMinus: 1, callahans: 0,
     },
   },
   {
@@ -125,9 +125,9 @@ const players = [
     hometown: 'Lafayette, IN',
     bio: 'Calm distributor who sets the tempo. Rarely forces a throw.',
     stats: {
-      goals: 0, assists: 0, blocks: 0, gamesPlayed: 0, pointsPlayed: 0,
-      throwAttempts: 0, throwaways: 0, hucksAttempted: 0, hucksCaught: 0,
-      plusMinus: 0, callahans: 0,
+      goals: 13, assists: 4, blocks: 9, gamesPlayed: 9, pointsPlayed: 71,
+      throwAttempts: 27, throwaways: 2, hucksAttempted: 1, hucksCaught: 0,
+      plusMinus: 23, callahans: 0,
     },
   },
   {
@@ -143,9 +143,9 @@ const players = [
     hometown: 'Huntington, IN',
     bio: 'Team\u2019s defensive anchor. Reads the disc before it leaves the thrower\u2019s hand.',
     stats: {
-      goals: 0, assists: 0, blocks: 0, gamesPlayed: 0, pointsPlayed: 0,
-      throwAttempts: 0, throwaways: 0, hucksAttempted: 0, hucksCaught: 0,
-      plusMinus: 0, callahans: 0,
+      goals: 5, assists: 9, blocks: 8.5, gamesPlayed: 5, pointsPlayed: 45,
+      throwAttempts: 28, throwaways: 10, hucksAttempted: 5, hucksCaught: 1,
+      plusMinus: 10.5, callahans: 0,
     },
   },
 
@@ -162,9 +162,9 @@ const players = [
     hometown: 'Huntington, IN',
     bio: 'Team\u2019s defensive anchor. Reads the disc before it leaves the thrower\u2019s hand.',
     stats: {
-      goals: 0, assists: 0, blocks: 0, gamesPlayed: 0, pointsPlayed: 0,
-      throwAttempts: 0, throwaways: 0, hucksAttempted: 0, hucksCaught: 0,
-      plusMinus: 0, callahans: 0,
+      goals: 20, assists: 9, blocks: 6, gamesPlayed: 13, pointsPlayed: 104,
+      throwAttempts: 29, throwaways: 4, hucksAttempted: 2, hucksCaught: 0,
+      plusMinus: 29, callahans: 0,
     },
   },
 
@@ -181,9 +181,9 @@ const players = [
     hometown: 'Huntington, IN',
     bio: 'Team\u2019s defensive anchor. Reads the disc before it leaves the thrower\u2019s hand.',
     stats: {
-      goals: 0, assists: 0, blocks: 0, gamesPlayed: 0, pointsPlayed: 0,
-      throwAttempts: 0, throwaways: 0, hucksAttempted: 0, hucksCaught: 0,
-      plusMinus: 0, callahans: 0,
+      goals: 14, assists: 3, blocks: 2, gamesPlayed: 9, pointsPlayed: 71,
+      throwAttempts: 12, throwaways: 1, hucksAttempted: 0, hucksCaught: 0,
+      plusMinus: 17, callahans: 0,
     },
   },
 
@@ -200,9 +200,9 @@ const players = [
     hometown: 'Huntington, IN',
     bio: 'Team\u2019s defensive anchor. Reads the disc before it leaves the thrower\u2019s hand.',
     stats: {
-      goals: 0, assists: 0, blocks: 0, gamesPlayed: 0, pointsPlayed: 0,
-      throwAttempts: 0, throwaways: 0, hucksAttempted: 0, hucksCaught: 0,
-      plusMinus: 0, callahans: 0,
+      goals: 3, assists: 6, blocks: 2, gamesPlayed: 4, pointsPlayed: 28,
+      throwAttempts: 16, throwaways: 3, hucksAttempted: 6, hucksCaught: 3,
+      plusMinus: 7, callahans: 0,
     },
   },
 
@@ -219,9 +219,9 @@ const players = [
     hometown: 'Huntington, IN',
     bio: 'Team\u2019s defensive anchor. Reads the disc before it leaves the thrower\u2019s hand.',
     stats: {
-      goals: 0, assists: 0, blocks: 0, gamesPlayed: 0, pointsPlayed: 0,
-      throwAttempts: 0, throwaways: 0, hucksAttempted: 0, hucksCaught: 0,
-      plusMinus: 0, callahans: 0,
+      goals: 3, assists: 4, blocks: 2, gamesPlayed: 5, pointsPlayed: 45,
+      throwAttempts: 16, throwaways: 3, hucksAttempted: 1, hucksCaught: 1,
+      plusMinus: 5, callahans: 0,
     },
   },
 
@@ -238,9 +238,9 @@ const players = [
     hometown: 'Huntington, IN',
     bio: 'Team\u2019s defensive anchor. Reads the disc before it leaves the thrower\u2019s hand.',
     stats: {
-      goals: 0, assists: 0, blocks: 0, gamesPlayed: 0, pointsPlayed: 0,
-      throwAttempts: 0, throwaways: 0, hucksAttempted: 0, hucksCaught: 0,
-      plusMinus: 0, callahans: 0,
+      goals: 0, assists: 0, blocks: 1, gamesPlayed: 1, pointsPlayed: 12,
+      throwAttempts: 3, throwaways: 2, hucksAttempted: 0, hucksCaught: 0,
+      plusMinus: -2, callahans: 0,
     },
   },
 
@@ -257,9 +257,9 @@ const players = [
     hometown: 'Huntington, IN',
     bio: 'Team\u2019s defensive anchor. Reads the disc before it leaves the thrower\u2019s hand.',
     stats: {
-      goals: 0, assists: 0, blocks: 0, gamesPlayed: 0, pointsPlayed: 0,
-      throwAttempts: 0, throwaways: 0, hucksAttempted: 0, hucksCaught: 0,
-      plusMinus: 0, callahans: 0,
+      goals: 0, assists: 0, blocks: 1, gamesPlayed: 1, pointsPlayed: 12,
+      throwAttempts: 1, throwaways: 0, hucksAttempted: 0, hucksCaught: 0,
+      plusMinus: 1, callahans: 0,
     },
   },
 
@@ -276,9 +276,9 @@ const players = [
     hometown: 'Huntington, IN',
     bio: 'Team\u2019s defensive anchor. Reads the disc before it leaves the thrower\u2019s hand.',
     stats: {
-      goals: 0, assists: 0, blocks: 0, gamesPlayed: 0, pointsPlayed: 0,
+      goals: 2, assists: 0, blocks: 0, gamesPlayed: 1, pointsPlayed: 12,
       throwAttempts: 0, throwaways: 0, hucksAttempted: 0, hucksCaught: 0,
-      plusMinus: 0, callahans: 0,
+      plusMinus: 2, callahans: 0,
     },
   },
 ]
