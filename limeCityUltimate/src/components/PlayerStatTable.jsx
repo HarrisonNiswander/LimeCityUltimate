@@ -1,7 +1,7 @@
 import { medalClass } from '../utils/leaderboard.js'
-import '../components/styles/LeaderboardTable.css'
-import '../components/styles/StatLeadersOverview.css'
-import './styles/PlayerStatTable.css'
+import '../components/LeaderboardTable.css'
+import '../components/StatLeadersOverview.css'
+import './PlayerStatTable.css'
 
 function formatDate(date) {
   return new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
@@ -34,13 +34,13 @@ export default function PlayerStatTable({ title, rows, withGame = false }) {
             )}
             <div className={`lb-row ${medal} ${withGame ? 'pst-row-game' : 'pst-row-plain'}`}>
               <span className="slo-stat-label">{r.label}</span>
-              <span className="lb-value">{r.value === null ? '—' : `${r.value}${r.suffix || ''}`}</span>
+              <span className="lb-value">{r.value === null ? 'N/A' : `${r.value}${r.suffix || ''}`}</span>
               {withGame && (
                 <span className="lb-game">
                   {r.game ? `vs. ${r.game.opponent} · ${formatDate(r.game.date)}` : '—'}
                 </span>
               )}
-              <span className="pst-record-badge">{r.rank === 1 ? '🥇 Team Record' : ''}{r.rank === 2 ? '🥈 #2 Overall' : ''}{r.rank === 3 ? '🥉 #3 Overall' : ''}</span>
+              <span className="pst-record-badge">{r.rank === 1 ? '🏆 Team record' : ''}</span>
             </div>
           </div>
         )

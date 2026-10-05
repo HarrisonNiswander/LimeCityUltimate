@@ -1,8 +1,8 @@
 import statCategories from '../data/statCategories.js'
 import { findPlayer } from '../utils/findPlayer.js'
 import { withRanks } from '../utils/leaderboard.js'
-import '../components/styles/LeaderboardTable.css'
-import './styles/StatLeadersOverview.css'
+import '../components/LeaderboardTable.css'
+import './StatLeadersOverview.css'
 
 function formatDate(date) {
   return new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
@@ -14,8 +14,16 @@ function GroupRows({ label, cats, source, withGame }) {
       <div className="slo-group-label">{label}</div>
       {cats.map((s) => {
         const rows = source[s.id] || []
-        if (!rows.length) return null
-        const leaders = withRanks(rows).filter((r) => r.rank === 1)
+        const leaders = rows.length ? withRanks(rows).filter((r) => r.rank === 1) : []
+
+        if (!leaders.length) {
+          return (
+            <div key={s.id} className={`lb-row ${withGame ? 'slo-row-game' : 'slo-row-plain'}`}>
+              <span className="slo-stat-label">{s.label}</span>
+              <span className="lb-empty-inline">N/A — no qualifying record yet</span>
+            </div>
+          )
+        }
 
         return leaders.map((r, i) => {
           const player = findPlayer(r.player)

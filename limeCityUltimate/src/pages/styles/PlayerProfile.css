@@ -22,6 +22,12 @@
   margin-top: 8px;
 }
 
+.profile-nickname {
+  font-style: italic;
+  color: var(--muted);
+  font-size: 0.6em;
+}
+
 .profile-facts {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

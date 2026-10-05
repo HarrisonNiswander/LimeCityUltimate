@@ -1,6 +1,6 @@
 import { withRanks, medalClass } from '../utils/leaderboard.js'
 import { findPlayer } from '../utils/findPlayer.js'
-import './styles/LeaderboardTable.css'
+import './LeaderboardTable.css'
 
 function formatDate(date) {
   return new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
@@ -18,6 +18,12 @@ export default function LeaderboardTable({ title, rows, valueLabel, suffix = '',
         <span>{valueLabel}</span>
         {withGame && <span>Game</span>}
       </div>
+
+      {ranked.length === 0 && (
+        <div className="lb-row lb-empty">
+          <span>N/A — no qualifying record yet</span>
+        </div>
+      )}
 
       {ranked.map((r, i) => {
         const medal = medalClass(r.rank)

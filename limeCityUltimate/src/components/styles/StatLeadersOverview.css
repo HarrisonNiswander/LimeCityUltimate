@@ -18,6 +18,13 @@
   text-align: center;
 }
 
+.lb-empty-inline {
+  grid-column: 2 / -1;
+  color: var(--muted);
+  font-style: italic;
+  text-align: center;
+}
+
 @media (max-width: 640px) {
   .slo-row-plain { grid-template-columns: 100px 1fr 60px; gap: 12px; }
   .slo-row-game { grid-template-columns: 100px 1fr 50px; gap: 12px; }

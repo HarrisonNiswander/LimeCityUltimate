@@ -1,7 +1,9 @@
 import { useParams, Link, Navigate } from 'react-router-dom'
 import tournaments from '../data/tournaments.js'
 import games from '../data/games.js'
-import './styles/TournamentResults.css'
+import { getTournamentPlayerTotals } from '../utils/tournamentStats.js'
+import { findPlayer } from '../utils/findPlayer.js'
+import './TournamentResults.css'
 
 export default function TournamentDetail() {
   const { tournamentId } = useParams()
@@ -10,6 +12,7 @@ export default function TournamentDetail() {
   if (!tournament) return <Navigate to="/tournaments" replace />
 
   const tournamentGames = games.filter((g) => g.tournament === tournament.name)
+  const playerTotals = getTournamentPlayerTotals(tournament.name)
 
   return (
     <div className="page wrap">
@@ -55,7 +58,7 @@ export default function TournamentDetail() {
       )}
 
       <h2 className="records-sub-head">Top performers</h2>
-      <div className="stat-directory" style={{ gridTemplateColumns: '1fr' }}>
+      <div className="stat-directory" style={{ gridTemplateColumns: '1fr', marginBottom: 40 }}>
         {tournament.topPerformers.map((p) => (
           <div className="stat-directory-item" key={p.name} style={{ cursor: 'default' }}>
             <span>{p.name}</span>
@@ -63,6 +66,40 @@ export default function TournamentDetail() {
           </div>
         ))}
       </div>
+
+      {playerTotals.length > 0 && (
+        <>
+          <h2 className="records-sub-head">Player totals</h2>
+          <div className="leader-table">
+            <div className="leader-row leader-head" style={{ gridTemplateColumns: '1fr 110px repeat(4, 80px)' }}>
+              <span>Player</span>
+              <span>Team</span>
+              <span>Goals</span>
+              <span>Assists</span>
+              <span>Blocks</span>
+              <span>+/-</span>
+            </div>
+            {playerTotals.map((p) => {
+              const player = findPlayer(p.player)
+              return (
+                <Link
+                  to={player ? `/roster/${player.id}` : '/roster'}
+                  key={p.player}
+                  className="leader-row"
+                  style={{ gridTemplateColumns: '1fr 110px repeat(4, 80px)' }}
+                >
+                  <span style={{ color: 'var(--cream)', fontWeight: 600 }}>{p.player}</span>
+                  <span style={{ color: 'var(--muted)', fontFamily: 'inherit', fontWeight: 500 }}>{p.team || '—'}</span>
+                  <span>{p.goals}</span>
+                  <span>{p.assists}</span>
+                  <span>{p.blocks}</span>
+                  <span>{p.plusMinus > 0 ? `+${p.plusMinus}` : p.plusMinus}</span>
+                </Link>
+              )
+            })}
+          </div>
+        </>
+      )}
     </div>
   )
 }
