@@ -43,7 +43,8 @@ export default function TournamentDetail() {
                   {g.result}
                 </span>
                 <span className="game-row-main">
-                  <strong>vs. {g.opponent}</strong>
+                  {/* <strong>vs. {g.opponent}</strong> */}
+                  <strong>{g.opponent}</strong>
                   <span className="game-row-sub">Full box score</span>
                 </span>
                 <span className="game-row-score">{g.score}</span>

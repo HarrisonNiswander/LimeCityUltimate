@@ -49,7 +49,8 @@ export default function Stats() {
               {g.result}
             </span>
             <span className="game-row-main">
-              <strong>vs. {g.opponent}</strong>
+              {/* <strong>vs. {g.opponent}</strong> */}
+              <strong>{g.opponent}</strong>
               <span className="game-row-sub">{g.tournament}</span>
             </span>
             <span className="game-row-score">{g.score}</span>

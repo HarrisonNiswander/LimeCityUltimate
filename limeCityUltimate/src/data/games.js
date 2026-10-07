@@ -4,8 +4,8 @@ const games = [
     {
     id: 'g01',
     date: '2025-07-09',
-    opponent: 'Blue',
-    result: 'W',
+    opponent: 'Game 1',
+    result: ' ',
     score: '5-2',
     tournament: 'Summer Clash #1',
     sourceGameNumber: 1, // which "Game: #N" this was in its source spreadsheet — used to avoid re-importing it
@@ -18,8 +18,8 @@ const games = [
   {
     id: 'g02',
     date: '2025-07-09',
-    opponent: 'Blue',
-    result: 'L',
+    opponent: 'Game 2',
+    result: ' ',
     score: '4-5',
     tournament: 'Summer Clash #1',
     sourceGameNumber: 2, // which "Game: #N" this was in its source spreadsheet — used to avoid re-importing it
@@ -32,8 +32,8 @@ const games = [
   {
     id: 'g03',
     date: '2025-07-09',
-    opponent: 'Blue',
-    result: 'L',
+    opponent: 'Game 3',
+    result: ' ',
     score: '4-5',
     tournament: 'Summer Clash #1',
     sourceGameNumber: 3, // which "Game: #N" this was in its source spreadsheet — used to avoid re-importing it
@@ -46,8 +46,8 @@ const games = [
   {
     id: 'g04',
     date: '2025-07-09',
-    opponent: 'Blue',
-    result: 'W',
+    opponent: 'Game 4',
+    result: ' ',
     score: '5-4',
     tournament: 'Summer Clash #1',
     sourceGameNumber: 4, // which "Game: #N" this was in its source spreadsheet — used to avoid re-importing it
@@ -60,8 +60,8 @@ const games = [
   {
     id: 'g05',
     date: '2025-07-09',
-    opponent: 'Blue',
-    result: 'W',
+    opponent: 'Game 5',
+    result: ' ',
     score: '5-4',
     tournament: 'Summer Clash #1',
     sourceGameNumber: 5, // which "Game: #N" this was in its source spreadsheet — used to avoid re-importing it
@@ -75,8 +75,8 @@ const games = [
   {
     id: 'g06',
     date: '2025-08-03',
-    opponent: 'Dark',
-    result: 'W',
+    opponent: 'Game 1',
+    result: ' ',
     score: '5-3',
     tournament: 'Summer Clash #2',
     sourceGameNumber: 1, // which "Game: #N" this was in its source spreadsheet — used to avoid re-importing it
@@ -89,8 +89,8 @@ const games = [
   {
     id: 'g07',
     date: '2025-08-03',
-    opponent: 'Dark',
-    result: 'L',
+    opponent: 'Game 2',
+    result: ' ',
     score: '1-5',
     tournament: 'Summer Clash #2',
     sourceGameNumber: 2, // which "Game: #N" this was in its source spreadsheet — used to avoid re-importing it
@@ -103,8 +103,8 @@ const games = [
   {
     id: 'g08',
     date: '2025-08-03',
-    opponent: 'Dark',
-    result: 'W',
+    opponent: 'Game 3',
+    result: ' ',
     score: '5-2',
     tournament: 'Summer Clash #2',
     sourceGameNumber: 3, // which "Game: #N" this was in its source spreadsheet — used to avoid re-importing it
@@ -117,8 +117,8 @@ const games = [
   {
     id: 'g09',
     date: '2025-08-03',
-    opponent: 'Dark',
-    result: 'L',
+    opponent: 'Game 4',
+    result: ' ',
     score: '3-4',
     tournament: 'Summer Clash #2',
     sourceGameNumber: 4, // which "Game: #N" this was in its source spreadsheet — used to avoid re-importing it
@@ -132,8 +132,8 @@ const games = [
   {
     id: 'g10',
     date: '2025-12-23',
-    opponent: 'Ice',
-    result: 'W',
+    opponent: 'Game 1',
+    result: ' ',
     score: '5-4',
     tournament: 'Frisbee Clash #3',
     sourceGameNumber: 1, // which "Game: #N" this was in its source spreadsheet — used to avoid re-importing it
@@ -146,8 +146,8 @@ const games = [
   {
     id: 'g11',
     date: '2025-12-23',
-    opponent: 'Ice',
-    result: 'W',
+    opponent: 'Game 2',
+    result: ' ',
     score: '5-4',
     tournament: 'Frisbee Clash #3',
     sourceGameNumber: 2, // which "Game: #N" this was in its source spreadsheet — used to avoid re-importing it
@@ -160,8 +160,8 @@ const games = [
   {
     id: 'g12',
     date: '2025-12-23',
-    opponent: 'Ice',
-    result: 'W',
+    opponent: 'Game 3',
+    result: ' ',
     score: '5-3',
     tournament: 'Frisbee Clash #3',
     sourceGameNumber: 3, // which "Game: #N" this was in its source spreadsheet — used to avoid re-importing it
@@ -174,8 +174,8 @@ const games = [
   {
     id: 'g13',
     date: '2025-12-23',
-    opponent: 'Ice',
-    result: 'W',
+    opponent: 'Game 4',
+    result: ' ',
     score: '4-3',
     tournament: 'Frisbee Clash #3',
     sourceGameNumber: 4, // which "Game: #N" this was in its source spreadsheet — used to avoid re-importing it
@@ -189,8 +189,8 @@ const games = [
   {
     id: 'g14',
     date: '2025-12-30',
-    opponent: 'Kobe',
-    result: 'W',
+    opponent: 'Game 1',
+    result: ' ',
     score: '7-5',
     tournament: 'Frisbee Clash #3.5',
     sourceGameNumber: 1, // which "Game: #N" this was in its source spreadsheet — used to avoid re-importing it

@@ -21,7 +21,8 @@ export default function StatsGame() {
       <div className="page-head">
         <div>
           <span className="page-kicker">{game.tournament} · {new Date(game.date).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</span>
-          <h1>vs. {game.opponent}</h1>
+          {/* <h1>vs. {game.opponent}</h1> */}
+          <h1>{game.opponent}</h1>
         </div>
         <div className={`game-score-badge game-score-badge-${game.result === 'W' ? 'win' : 'loss'}`}>
           {game.result} {game.score}
