@@ -103,20 +103,20 @@
 
 /* medal coloring */
 .medal-gold {
-  background: linear-gradient(90deg, rgba(143, 111, 34, 0.16), transparent 70%);
-  border-left: 3px solid var(--gold);
+  background: rgba(143, 111, 34, 0.16);
+  border-left: 4px solid var(--gold);
 }
 .medal-gold .lb-rank, .medal-gold .lb-value { color: var(--gold); }
 
 .medal-silver {
-  background: linear-gradient(90deg, rgba(108, 116, 122, 0.16), transparent 70%);
-  border-left: 3px solid var(--silver);
+  background: rgba(108, 116, 122, 0.16);
+  border-left: 4px solid var(--silver);
 }
 .medal-silver .lb-rank, .medal-silver .lb-value { color: var(--silver); }
 
 .medal-bronze {
-  background: linear-gradient(90deg, rgba(140, 87, 48, 0.16), transparent 70%);
-  border-left: 3px solid var(--bronze);
+  background: rgba(140, 87, 48, 0.16);
+  border-left: 4px solid var(--bronze);
 }
 .medal-bronze .lb-rank, .medal-bronze .lb-value { color: var(--bronze); }
 
