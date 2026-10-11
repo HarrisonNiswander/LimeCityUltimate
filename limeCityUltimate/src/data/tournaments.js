@@ -2,12 +2,14 @@ const tournaments = [
   {
     id: 't01',
     name: 'Summer Clash #1',
-    location: '', // TODO: fill in
-    date: '2025-07-09', // TODO: adjust to the full date range if multi-day
-    finish: '', // TODO: fill in
-    record: '', // TODO: fill in
-    notes: '', // TODO: fill in
-    topPerformers: [], // TODO: fill in
+    location: 'Huntington, IN',
+    date: '2025-07-09',
+    finish: 'Yellow 3 - Blue 2',
+    record: 'N/A',
+    notes: 'First ever Frisbee Clash competition (previously called Summer Clash). '+
+           'Team Yellow consisted of Harrison N., Micah P., and Jake S. ' + 
+           'Team Blue consisted of Tiler C., Keagan P., and Gavin "Shaq" B.',
+    topPerformers: [],
   },
 
   {
