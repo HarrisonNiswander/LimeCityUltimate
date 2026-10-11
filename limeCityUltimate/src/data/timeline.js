@@ -2,40 +2,64 @@
 // you find them — drop images in /public/timeline/ and update the paths.
 const timeline = [
   {
-    year: '2019',
-    title: 'Founded',
-    description: 'Started as a pickup group at a Huntington city park. First logo was hand-drawn on a bedsheet banner.',
-    image: '/timeline/logo-2019.svg',
-  },
-  {
-    year: '2020',
-    title: 'First roster',
-    description: 'Fielded a full 18-person roster and played our first sanctioned tournament.',
-    image: '/timeline/team-2020.svg',
-  },
-  {
     year: '2022',
-    title: 'Rebrand',
-    description: 'Retired the original logo for the current disc mark and adopted green as the club color.',
-    image: '/timeline/logo-2022.svg',
+    title: 'Huntington Ultimate Begins',
+    description: 'Text Here',
+    image: '/timeline/Team2022.png',
   },
   {
     year: '2023',
-    title: 'First Sectionals title',
-    description: 'Won our section for the first time, punching a ticket to Regionals.',
-    image: '/timeline/team-2023.svg',
+    title: 'Huntington Ultimate Logo',
+    description: 'Text Here',
+    image: '/timeline/logo2023.jpg',
+  },
+  {
+    year: '2023',
+    title: '2023 Jersey Design',
+    description: 'Text Here',
+    image: '/timeline/jersey2023.png',
+  },
+  {
+    year: '2023',
+    title: 'Huntington Ultimate 2023',
+    description: 'Text Here',
+    image: '/timeline/Team2023.png',
+  },
+  {
+    year: '2023',
+    title: '1st Tournament',
+    description: 'Text Here',
+    image: '/timeline/1stTournament.JPG',
+  },
+  {
+    year: '2024',
+    title: 'Huntington Ultimate 2024',
+    description: 'Text Here',
+    image: '/timeline/Team2024.JPG',
+  },
+  {
+    year: '2024',
+    title: '1st YouTube Video',
+    description: 'Text Here',
+    image: '/timeline/1stYouTube.png',
   },
   {
     year: '2025',
-    title: 'New crest',
-    description: 'Refined the crest ahead of the club\u2019s move up to the Open division.',
-    image: '/timeline/logo-2025.svg',
+    title: 'Rebrand: Lime City Ultimate',
+    description: 'Text Here',
+    image: '/timeline/team-2026.svg',
+  },
+  {
+    year: '2025',
+    title: 'Lime City Ultimate 2025',
+    description: 'Text Here',
+    image: '/timeline/Team2025.JPG',
   },
   {
     year: '2026',
-    title: 'Today',
-    description: 'Competing in the Open division with a 24-player roster and a full tournament schedule.',
-    image: '/timeline/team-2026.svg',
+    title: 'Lime City Ultimate 2026',
+    description: 'Text Here',
+    image: '/timeline/Team2026.JPG',
   },
 ]
 
