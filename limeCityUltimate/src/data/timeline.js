@@ -47,7 +47,7 @@ const timeline = [
     year: '2025',
     title: 'Rebrand: Lime City Ultimate',
     description: 'Text Here',
-    image: '/timeline/team-2026.svg',
+    image: '/timeline/limeCityLogo2025.png',
   },
   {
     year: '2025',
