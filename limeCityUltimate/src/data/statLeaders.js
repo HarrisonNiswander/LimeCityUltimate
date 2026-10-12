@@ -95,7 +95,7 @@ function buildSingleGame(statId, {
     .map((row) => ({ row, value: getValue(row) }))
     .filter(({ row, value }) => value !== undefined && value !== null && meetsMinimum(row))
     .filter(({ value }) => !excludeZero || value !== 0)
-    .map(({ row, value }) => ({ player: row.player, value, opponent: row.opponent, date: row.date }))
+    .map(({ row, value }) => ({ player: row.player, value, opponent: row.opponent, date: row.date, tournament: row.tournament }))
     .sort((a, b) => (ascending ? a.value - b.value : b.value - a.value))
     .slice(0, MAX_SINGLE_GAME_ROWS)
 }

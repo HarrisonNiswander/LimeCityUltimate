@@ -2,6 +2,7 @@
   font-size: 1.2rem;
   color: var(--cream);
   margin-bottom: 12px;
+  padding: 5px;
 }
 
 .lb-table {
@@ -71,7 +72,7 @@
 .lb-game {
   color: var(--muted);
   font-size: 0.85rem;
-  text-align: center;
+  text-align: left;
 }
 
 .lb-row-plain.lb-head span:nth-child(1),

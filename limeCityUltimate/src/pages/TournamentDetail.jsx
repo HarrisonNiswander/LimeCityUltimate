@@ -58,7 +58,7 @@ export default function TournamentDetail() {
         </>
       )}
 
-      <h2 className="records-sub-head">Top performers</h2>
+      {/* <h2 className="records-sub-head">Top performers</h2> */}
       <div className="stat-directory" style={{ gridTemplateColumns: '1fr', marginBottom: 40 }}>
         {tournament.topPerformers.map((p) => (
           <div className="stat-directory-item" key={p.name} style={{ cursor: 'default' }}>
@@ -70,7 +70,7 @@ export default function TournamentDetail() {
 
       {playerTotals.length > 0 && (
         <>
-          <h2 className="records-sub-head">Player totals</h2>
+          <h2 className="records-sub-head">Full Boxscore</h2>
           <div className="leader-table">
             <div className="leader-row leader-head" style={{ gridTemplateColumns: '1fr 110px repeat(4, 80px)' }}>
               <span>Player</span>

@@ -3,6 +3,7 @@ import { findPlayer } from '../utils/findPlayer.js'
 import { withRanks } from '../utils/leaderboard.js'
 import '../components/styles/LeaderboardTable.css'
 import './styles/StatLeadersOverview.css'
+import tournaments from '../data/tournaments.js'
 
 function formatDate(date) {
   return new Date(date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
@@ -44,7 +45,7 @@ function GroupRows({ label, cats, source, withGame }) {
                 <span className="lb-player-name">{r.player}</span>
               </span>
               <span className="lb-value">{r.value}{s.suffix || ''}</span>
-              {withGame && <span className="lb-game">vs. {r.opponent} · {formatDate(r.date)}</span>}
+              {withGame && <span className="lb-game">vs. {r.opponent} [{r.tournament}] · {formatDate(r.date)}</span>}
             </div>
           )
         })
