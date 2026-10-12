@@ -13,46 +13,29 @@ export default function About() {
       <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 0.9fr', gap: 48 }} className="about-grid">
         <div>
           <p style={{ fontSize: '1.1rem', color: 'var(--cream)', lineHeight: 1.7 }}>
-            Lime City Ultimate started in 2019 as a pickup group at a Huntington city park and
-            has grown into one of the region's most competitive club teams. We play Open
-            division, recruit from across northeast Indiana, and compete at Sectionals,
-            Regionals, and select invitational tournaments each spring and summer.
+            Lime City Ultimate started out as a group of friends who loved playing
+            ultimate frisbee. The friendship began through highschool cross country and 
+            has continued to grow through the years. Freshman year of highschool, we were introduced 
+            to ultimate frisbee and we've been hooked ever since.
+            
           </p>
-          <p style={{ marginTop: 20, color: 'var(--muted)', lineHeight: 1.7 }}>
-            Practices run Tuesday and Thursday evenings at Foster Park, with weekend
-            scrimmages against regional clubs leading into tournament season. New players are
-            always welcome at open runs — no experience required, just a willingness to sprint.
+          <br></br>
+          <p style={{ fontSize: '1.1rem', color: 'var(--cream)', lineHeight: 1.7 }}>
+            Every summer and Christmas break, the team gets together to play frisbee together.
+            Each year, the team grows with new people joining and veterans returning.
           </p>
-
-          <h2 style={{ fontSize: '1.6rem', color: 'var(--cream)', marginTop: 48, marginBottom: 16 }}>
-            What we value
-          </h2>
-          <ul style={{ listStyle: 'none', padding: 0, display: 'grid', gap: 14 }}>
-            {[
-              ['Spirit of the Game', 'Ultimate is self-officiated. We hold ourselves to that standard, on and off the field.'],
-              ['Development', 'Every roster spot from rookie to captain gets real reps and real feedback.'],
-              ['Community', 'We show up for each other — practices, tournaments, and everything between.'],
-            ].map(([title, body]) => (
-              <li key={title} style={{ display: 'flex', gap: 16, alignItems: 'flex-start' }}>
-                <span className="disc" style={{ width: 10, height: 10, marginTop: 8, flexShrink: 0 }} />
-                <div>
-                  <strong style={{ color: 'var(--cream)' }}>{title}</strong>
-                  <p style={{ color: 'var(--muted)', marginTop: 4 }}>{body}</p>
-                </div>
-              </li>
-            ))}
-          </ul>
+          
         </div>
 
         <aside style={{ background: 'var(--ink-soft)', border: '1px solid var(--turf-line)', borderRadius: 4, padding: 32, alignSelf: 'start' }}>
           <span className="page-kicker">Club facts</span>
           <dl style={{ display: 'grid', gap: 18, marginTop: 16 }}>
             {[
-              ['Founded', '2019'],
+              ['Founded', '2022'],
               ['Division', 'Open'],
-              ['Home field', 'Riverside Park, Huntington'],
-              ['Practices', 'Tue & Thu, 6:30 PM'],
-              ['Roster size', '20–24 players'],
+              ['Home field', 'Huntington University'],
+              ['Location', 'Huntington, IN'],
+              ['Cameras Used', 'Insta360 GO 3 & 3S'],
             ].map(([k, v]) => (
               <div key={k} style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--turf-line)', paddingBottom: 12 }}>
                 <dt style={{ color: 'var(--muted)' }}>{k}</dt>
