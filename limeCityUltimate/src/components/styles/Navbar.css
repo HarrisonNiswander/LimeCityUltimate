@@ -86,6 +86,11 @@
   background: var(--cream);
 }
 
+.logo{
+  width: 75px;
+  height: 60px;
+}
+
 @media (max-width: 860px) {
   .nav-toggle { display: flex; }
 
