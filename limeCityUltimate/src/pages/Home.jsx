@@ -7,6 +7,7 @@ import { withRanks } from '../utils/leaderboard.js'
 import { findPlayer } from '../utils/findPlayer.js'
 import videos from '../data/videos.js'
 import './styles/Home.css'
+import Logo from '../../public/timeline/limeCityLogo2025.png'
 
 function formatDate(date) {
   const parsed = new Date(`${date}T12:00:00`)
@@ -65,8 +66,8 @@ export default function Home() {
               ULTIMATE
             </h1>
             <p className="hero-sub">
-              A club built on hard cuts, harder discipline, and a bench that never stops
-              cheering. Follow the {latestSeason.season} season — roster, box scores, and film,
+              A group of friends who love to play ultimate frisbee. 
+              Follow the {latestSeason.season} season — roster, box scores, and film, 
               all in one place.
             </p>
             <div className="hero-actions">
@@ -74,8 +75,9 @@ export default function Home() {
               <Link to="/youtube" className="btn btn-ghost">Watch highlights</Link>
             </div>
           </div>
-          <div className="hero-disc-wrap" aria-hidden="true">
-            <div className="hero-disc" />
+          <div>
+            {/* <div className="hero-disc" /> */}
+            <img src="'../../public/timeline/limeCityLogo2025Transparent.png" width="100%" height="auto"/>
           </div>
         </div>
       </section>
