@@ -7,7 +7,6 @@ import { withRanks } from '../utils/leaderboard.js'
 import { findPlayer } from '../utils/findPlayer.js'
 import videos from '../data/videos.js'
 import './styles/Home.css'
-import Logo from '../../public/timeline/limeCityLogo2025.png'
 
 function formatDate(date) {
   const parsed = new Date(`${date}T12:00:00`)
@@ -76,8 +75,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            {/* <div className="hero-disc" /> */}
-            <img src="'../../public/timeline/limeCityLogo2025Transparent.png" width="100%" height="auto"/>
+            <img src="../../public/timeline/limeCityLogo2025Transparent.png" width="100%" height="auto"/>
           </div>
         </div>
       </section>

@@ -19,7 +19,7 @@ export default function Navbar() {
     <header className="nav">
       <div className="wrap nav-inner">
         <NavLink to="/" className="nav-brand" onClick={() => setOpen(false)}>
-          <img src="'../../public/timeline/limeCityLogo2025Transparent.png" className="logo"/>
+          <img src="../../public/timeline/limeCityLogo2025Transparent.png" className="logo"/>
           <span className="nav-brand-text">
             LIME CITY<span className="nav-brand-sub">ULTIMATE</span>
           </span>
