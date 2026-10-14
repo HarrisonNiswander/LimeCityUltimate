@@ -36,8 +36,8 @@ export default function PlayerStatTable({ title, rows, withGame = false }) {
               <span className="slo-stat-label">{r.label}</span>
               <span className="lb-value">{r.value === null ? 'N/A' : `${r.value}${r.suffix || ''}`}</span>
               {withGame && (
-                <span className="lb-game">
-                  {r.game ? `vs. ${r.game.opponent} · ${formatDate(r.game.date)}` : '—'}
+                <span className="lb-game" style={{ whiteSpace: 'pre' }}>
+                  {r.game ? `${r.game.tournament}${"  ·  "}${formatDate(r.game.date)}` : '—'}
                 </span>
               )}
               <span className="pst-record-badge">{r.rank === 1 ? '🏆 Team record' : ''}</span>

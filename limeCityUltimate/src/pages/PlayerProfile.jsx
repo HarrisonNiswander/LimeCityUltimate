@@ -51,7 +51,7 @@ export default function PlayerProfile() {
       <div className="profile-top">
         <img src={player.photo} alt="" className="profile-photo" />
         <div>
-          <span className="page-kicker">#{player.number} · {player.position}</span>
+          <span className="page-kicker">#{player.number} · {player.position} · {player.hometown}</span>
           <h1 className="profile-name">
             {player.name}
             {player.nickname && <span className="profile-nickname"> "{player.nickname}"</span>}
@@ -64,19 +64,19 @@ export default function PlayerProfile() {
 
       <div className="profile-facts">
         <div className="profile-fact">
-          <span className="page-kicker">Hometown</span>
-          <strong>{player.hometown}</strong>
-        </div>
-        <div className="profile-fact">
-          <span className="page-kicker">Years with team</span>
+          <span className="page-kicker">Years with Team</span>
           <strong>{player.yearsWithTeam}</strong>
         </div>
         <div className="profile-fact">
-          <span className="page-kicker">Frisbee clashes</span>
+          <span className="page-kicker">Games Played</span>
           <strong>{player.stats.gamesPlayed}</strong>
         </div>
         <div className="profile-fact">
-          <span className="page-kicker">Frisbee clash record</span>
+          <span className="page-kicker">Points Played</span>
+          <strong>{player.stats.pointsPlayed}</strong>
+        </div>
+        <div className="profile-fact">
+          <span className="page-kicker">Frisbee Clash Record</span>
           <strong>{player.clashRecord}</strong>
         </div>
       </div>
