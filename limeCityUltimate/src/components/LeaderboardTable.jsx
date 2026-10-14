@@ -35,7 +35,7 @@ export default function LeaderboardTable({ title, rows, valueLabel, suffix = '',
               <span />
               <span className="lb-player-name lb-tie-name">{r.player}</span>
               <span />
-              {withGame && <span className="lb-game">vs. {r.opponent} [{r.tournament}] · {formatDate(r.date)}</span>}
+              {withGame && <span className="lb-game" style={{ whiteSpace: 'pre' }}>vs. {r.opponent}{"\t"}  {r.tournament}{"\t  "}{formatDate(r.date)}</span>}
             </div>
           )
         }
@@ -54,7 +54,7 @@ export default function LeaderboardTable({ title, rows, valueLabel, suffix = '',
               <span className="lb-player-name">{r.player}</span>
             </span>
             <span className="lb-value">{r.value}{suffix}</span>
-            {withGame && <span className="lb-game">vs. {r.opponent} [{r.tournament}] · {formatDate(r.date)}</span>}
+            {withGame && <span className="lb-game" style={{ whiteSpace: 'pre' }}>vs. {r.opponent}{"\t"}  {r.tournament}{"\t  "}{formatDate(r.date)}</span>}
           </div>
         )
       })}

@@ -45,7 +45,7 @@ function GroupRows({ label, cats, source, withGame }) {
                 <span className="lb-player-name">{r.player}</span>
               </span>
               <span className="lb-value">{r.value}{s.suffix || ''}</span>
-              {withGame && <span className="lb-game">vs. {r.opponent} [{r.tournament}] · {formatDate(r.date)}</span>}
+              {withGame && <span className="lb-game" style={{ whiteSpace: 'pre' }}>{r.tournament}{"\t"}{formatDate(r.date)}</span>}
             </div>
           )
         })
