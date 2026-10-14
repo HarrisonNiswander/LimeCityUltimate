@@ -75,7 +75,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <img src="../../public/timeline/limeCityLogo2025Transparent.png" width="100%" height="auto"/>
+            <img src="/timeline/limeCityLogo2025Transparent.png" width="100%" height="auto"/>
           </div>
         </div>
       </section>
